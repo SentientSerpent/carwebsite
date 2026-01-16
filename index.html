@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoVerse | Car Enthusiasts Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+    }
+    section {
+      padding: 60px 10%;
+    }
+    .cars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: #151515;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      padding: 15px;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AutoVerse<br/>Feel the Speed</h1>
+</header>
+
+<section>
+  <h2>Featured Cars</h2>
+  <div class="cars">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" />
+      <h3>Lamborghini Aventador</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" />
+      <h3>Porsche 911</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" />
+      <h3>Ford Mustang</h3>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 AutoVerse | Built by Sidhartha Panda
+</footer>
+
+</body>
+</html>
